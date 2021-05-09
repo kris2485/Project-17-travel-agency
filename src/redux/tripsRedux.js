@@ -13,7 +13,7 @@ export const getFilteredTrips = ({ trips, filters }) => {
 
   // TODO - filter by duration
   if (filters.duration) {
-    output = output.filter((trip) => trip.days >= filters.duration.from && trip.days <= filters.duration.to);
+    output = output.filter((trip) => trip.days >= filters.duration.to - filters.duration.from);
   }
 
   // TODO - filter by tags
