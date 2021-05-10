@@ -5,15 +5,15 @@ import styles from './OrderSummary.scss';
 import { calculateTotal } from '../../../utils/calculateTotal';
 import { formatPrice } from '../../../utils/formatPrice';
 
-const OrderSummary = (cost, options) => (
+const OrderSummary = ({ tripCost, options }) => (
   <h2 className={styles.component}>
-    Total:<strong>{formatPrice(calculateTotal(cost, options))}</strong>
+    Total:<strong>{formatPrice(calculateTotal(tripCost, options))}</strong>
   </h2>
 );
 
 OrderSummary.propTypes = {
-  cost: PropTypes.node,
-  options: PropTypes.node,
+  tripCost: PropTypes.string,
+  options: PropTypes.object,
 };
 
 export default OrderSummary;
