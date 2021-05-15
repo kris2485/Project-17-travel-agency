@@ -1,1 +1,7 @@
 @import '../../../styles/settings.scss';
+
+.box {
+  background: $color-background;
+  padding: 10px;
+  border: 1px solid;
+}
