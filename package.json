@@ -32,6 +32,7 @@
     "mini-css-extract-plugin": "^0.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-datepicker": "^3.8.0",
     "react-dom": "^16.8.6",
     "react-flexbox-grid": "^2.1.2",
     "react-html-parser": "^2.0.2",
