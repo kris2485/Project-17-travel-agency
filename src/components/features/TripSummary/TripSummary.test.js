@@ -35,7 +35,7 @@ describe('Component TripSummary', () => {
   });
 
   it('should throw error without required props', () => {
-    expect(() => shallow(<TripSummary />)).toThrow();
+    expect(() => shallow(<Hero />)).toThrow();
   });
   it('should render tags', () => {
     let expectedTags = ['tag-1', 'tag-2', 'tag-3'];
@@ -51,6 +51,6 @@ describe('Component TripSummary', () => {
   });
   it('should not render div with class tags if tags is undefined', () => {
     const component = shallow(<TripSummary />);
-    expect(component.find('.tags')).toBe(true);
+    expect(component.find('.tags').exists()).toBe(false);
   });
 });
