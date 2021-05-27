@@ -53,6 +53,23 @@
       "tripCountry": "TUR",
       "tripName": "Pleasant travel in cool Turkey",
       "id": 4
+    },
+    {
+      "car-rental": "full",
+      "accommodation": "house",
+      "features": [
+        "all-inclusive"
+      ],
+      "adults": "2",
+      "children": 0,
+      "name": "test@test.com",
+      "contact": "Chris R",
+      "start-date": "",
+      "totalCost": "$105,362",
+      "tripId": "5cc1d10130dfa407e2e54e20",
+      "tripCountry": "TUR",
+      "tripName": "Pleasant travel in cool Turkey",
+      "id": 5
     }
   ]
 }
