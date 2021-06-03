@@ -1,0 +1,12 @@
+@import '../../../styles/settings.scss';
+.component {
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  color: #fff;
+}
