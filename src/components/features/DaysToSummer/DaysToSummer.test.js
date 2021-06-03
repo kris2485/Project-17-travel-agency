@@ -42,10 +42,9 @@ const checkDescriptionAtDate = (date, expectedDescription) => {
 
     global.Date = trueDate;
   });
-
-  describe('Component DaysToSummer with mocked Date', () => {
-    checkDescriptionAtDate('2021-06-20', '1 day to summer!');
-    checkDescriptionAtDate('2021-06-07', '14 days to summer!');
-    checkDescriptionAtDate('2021-04-01', '81 days to summer!');
-  });
 };
+describe('Component DaysToSummer with mocked Date', () => {
+  checkDescriptionAtDate('2021-06-20', '1 day to summer!');
+  checkDescriptionAtDate('2021-06-07', '14 days to summer!');
+  checkDescriptionAtDate('2021-04-01', '81 days to summer!');
+});
