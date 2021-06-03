@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Hero.scss';
+import HappyHourAd from '../../features/HappyHourAd/HappyHourAd';
 
 const Hero = ({ variant = '', titleText, imageSrc, ...otherProps }) => (
   <div
@@ -15,6 +16,9 @@ const Hero = ({ variant = '', titleText, imageSrc, ...otherProps }) => (
   >
     <h2 className={styles.title}>{titleText}</h2>
     <img className={styles.image} src={imageSrc} />
+    <div className={styles.happyHour}>
+      <HappyHourAd title='Happy Hour' promoDescription="It's your time! Take advantage of Happy Hour! All offers 20% off!" />
+    </div>
   </div>
 );
 
